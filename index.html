@@ -8,20 +8,20 @@
 		/>
 		<meta
 			name="description"
-			content="A free, peer-to-peer, encrypted, open-source video calling for the web. No sign ups. No downloads."
+			content="Enjoy encrypted, peer-to-peer video calls without the need for downloads."
 		/>
 		<meta
 			name="keywords"
 			content="group video chat, video communication, multiparty video chat, video chat, webrtc, peer to peer, p2p"
 		/>
-		<meta name="application-name" content="Talk" />
+		<meta name="application-name" content="Rolchan" />
 		<!-- Meta data for link fetching -->
-		<meta property="og:url" content="https://vasanthv.github.io/talk/" />
-		<meta property="og:image" content="https://vasanthv.github.io/talk/icons/icon.png" />
-		<meta property="og:title" content="Talk - Free video calling for the web" />
+		<meta property="og:url" content="https://rahulhegde99.github.io/rolchan/" />
+		<meta property="og:image" content="https://rahulhegde99.github.io/rolchan/icons/icon.png" />
+		<meta property="og:title" content="Rolchan: Where Cats Call" />
 		<meta
 			property="og:description"
-			content="A free, peer-to-peer, encrypted, open-source video calling for the web. No sign ups. No downloads."
+			content="Enjoy encrypted, peer-to-peer video calls without the need for downloads."
 		/>
 
 		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
@@ -36,7 +36,7 @@
 		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 		<script defer src="script.js"></script>
 		<script defer src="webrtc.js"></script>
-		<title>Talk - Free video calling for the web</title>
+		<title>Rolchan: Where Cats Call</title>
 
 		<!-- ANALYTICS_SCRIPT: Please remove it for your use -->
 		<script async defer src="https://scripts.withcabin.com/hello.js"></script>
@@ -49,28 +49,19 @@
 		<main id="app">
 			<div id="appWrap" v-bind:style="'display:block;'">
 				<div id="intro" v-if="!callInitiated && !showChat && !showSettings">
-					<h1>Talk</h1>
-					<p>A free, peer-to-peer, encrypted, open-source video calling for the web.</p>
+					<h1>Rolchan: Where Cats Call</h1>
+					<p>Enjoy encrypted, peer-to-peer video calls without the need for downloads.</p>
 					<p>
-						<label for="roomId">Room Id:</label>
-						<input type="text" id="roomId" v-model="roomId" placeholder="Enter a room id" />
+						<label for="roomId">Room ID 🏠</label>
+						<input type="text" id="roomId" v-model="roomId" placeholder="Enter a catroom ID" />
 					</p>
 					<p>
-						<label for="yourName">Your name</label>
+						<label for="yourName">Your Name 🐱</label>
 						<input type="text" id="yourName" v-model="name" v-on:keyup="updateName" placeholder="Enter your name" />
 					</p>
 					<br />
 
 					<div class="footer">
-						<iframe
-							src="https://ghbtns.com/github-btn.html?user=vasanthv&repo=talk&type=star&count=true&size=large"
-							frameborder="0"
-							scrolling="0"
-							width="170"
-							height="30"
-							title="GitHub"
-						></iframe>
-
 						<button v-on:click="initiateCall">Proceed</button>
 					</div>
 				</div>
@@ -84,9 +75,9 @@
 							<div class="question italic">How was the quality of call?</div>
 							<div class="thankYou bold">Thank you for your feedback</div>
 							<div id="feedbackButtons">
-								<button data-cabin-event="call-quality-nah" v-on:click="onCallFeedback">😟<br />Nah!</button>
-								<button data-cabin-event="call-quality-meh" v-on:click="onCallFeedback">😐<br />Meh!</button>
-								<button data-cabin-event="call-quality-yay" v-on:click="onCallFeedback">😀<br />Yay!</button>
+								<button data-cabin-event="call-quality-nah" v-on:click="onCallFeedback">😿<br />Nah!</button>
+								<button data-cabin-event="call-quality-meh" v-on:click="onCallFeedback">😸<br />Okay!</button>
+								<button data-cabin-event="call-quality-yay" v-on:click="onCallFeedback">😻<br />Yay!</button>
 							</div>
 						</div>
 					</div>
